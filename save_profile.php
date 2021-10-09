@@ -5,8 +5,11 @@
 		echo "Please Login!";
 		exit();
 	}
-	mysql_connect("localhost:3306","myuser","root1234");
-	mysql_select_db("mydatabase");
+
+	$dbServerName = "localhost:3306"; // ip address (hostname -I)
+	$dbUsername = "myuser"; // username
+	$dbPassword = "root1234"; // db pass
+	$dbName = "mydatabase"; // your database to connect
 	
 	if($_POST["txtPassword"] != $_POST["txtConPassword"])
 	{
@@ -15,8 +18,9 @@
 	}
 	$strSQL = "UPDATE member SET Password = '".trim($_POST['txtPassword'])."' 
 	,Name = '".trim($_POST['txtName'])."' WHERE UserID = '".$_SESSION["UserID"]."' ";
-	$objQuery = mysql_query($strSQL);
 	
+	$objQuery = $conn->query($strSQL);
+
 	echo "Save Completed!<br>";		
 	
 	if($_SESSION["Status"] == "ADMIN")
@@ -28,5 +32,5 @@
 		echo "<br> Go to <a href='user_page.php'>User page</a>";
 	}
 	
-	mysql_close();
+	
 ?>

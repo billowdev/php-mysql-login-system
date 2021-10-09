@@ -11,12 +11,17 @@
 		echo "This page for Admin only!";
 		exit();
 	}	
-	
-	mysql_connect("localhost:3306","myuser","root1234");
-	mysql_select_db("mydatabase");
+	$dbServerName = "localhost:3306"; // ip address (hostname -I)
+	$dbUsername = "myuser"; // username
+	$dbPassword = "root1234"; // db pass
+	$dbName = "mydatabase"; // your database to connect
+  
+	$con = mysqli_connect($dbServerName, $dbUsername, $dbPassword, $dbName) or die("Error ! : " . mysqli_error($con));
+
 	$strSQL = "SELECT * FROM member WHERE UserID = '".$_SESSION['UserID']."' ";
-	$objQuery = mysql_query($strSQL);
-	$objResult = mysql_fetch_array($objQuery);
+	$objQuery = $conn->query($strSQL);
+	$objResult =$objQuery->fetch_assoc();
+
 ?>
 <html>
 <head>
