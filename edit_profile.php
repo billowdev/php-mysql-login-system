@@ -1,16 +1,15 @@
 <?php
+  include "dbcon.php";
 	session_start();
+  
+
 	if($_SESSION['UserID'] == "")
 	{
 		echo "Please Login!";
 		exit();
 	}
 	
-	$dbServerName = "localhost:3306"; // ip address (hostname -I)
-	$dbUsername = "myuser"; // username
-	$dbPassword = "root1234"; // db pass
-	$dbName = "mydatabase"; // your database to connect
-  $con = mysqli_connect($dbServerName, $dbUsername, $dbPassword, $dbName) or die("Error ! : " . mysqli_error($con));
+	
   
 	$strSQL = "SELECT * FROM member WHERE UserID = '".$_SESSION['UserID']."' ";
 
