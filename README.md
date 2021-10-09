@@ -1,13 +1,13 @@
 # php-mysql-login-system
 PHP MySQL reference : thaicreate
 
-<pre>
+```
 git clone https://github.com/lacakp/php-mysql-login-system.git; mv -v ./php-mysql-login-system/* ./ ; rm -r php-mysql-login-system;
-</pre>
+```
 
-<pre>
+```
 nano dbcon.php
-</pre>
+```
 
 
 reference origin : https://www.thaicreate.com/community/php-mysql-login-form-check-username-password.html
@@ -18,7 +18,7 @@ https://www.codexworld.com/connect-access-remote-mysql-database-cpanel-php/
 
 
 ## dbcon.php
-<pre>
+```
 <!-- dbcon.php -->
 <?php
 $dbServerName = "localhost"; // ip address (hostname -I)
@@ -29,10 +29,10 @@ $dbServerName = "localhost"; // ip address (hostname -I)
 	$conn = mysqli_connect($dbServerName, $dbUsername, $dbPassword, $dbName) or die("Connection failed: " . $conn->connect_error);
 
 ?>
-</pre>
+```
 
 ## login.php
-<pre>
+```
 <html>
 <head>
 <title>ThaiCreate.Com Tutorials</title>
@@ -61,10 +61,10 @@ $dbServerName = "localhost"; // ip address (hostname -I)
 </body>
 </html>
 
-</pre>
+```
 
 ## check_login.php
-<pre>
+```
 <?php
 	session_start();
 	include("dbcon.php");
@@ -99,10 +99,10 @@ $dbServerName = "localhost"; // ip address (hostname -I)
 	}
 	
 ?>
-</pre>
+```
 
 ## admin_page.php
-<pre>
+```
 <?php
 	
 	session_start();
@@ -150,10 +150,10 @@ $dbServerName = "localhost"; // ip address (hostname -I)
   <a href="logout.php">Logout</a>
 </body>
 </html>
-</pre>
+```
 
 ## user_page.php
-<pre>
+```
 <?php
 	session_start();
 	include "dbcon.php";
@@ -201,10 +201,10 @@ $dbServerName = "localhost"; // ip address (hostname -I)
   <a href="logout.php">Logout</a>
 </body>
 </html>
-</pre>
+```
 
 ## edit_profile.php
-<pre>
+```
 <?php
 	session_start();
   include "dbcon.php";
@@ -271,10 +271,10 @@ $dbServerName = "localhost"; // ip address (hostname -I)
 </form>
 </body>
 </html>
-</pre>
+```
 
 ## save_profile.php
-<pre>
+```
 <?php
 	session_start();
 	include "dbcon.php";
@@ -307,13 +307,13 @@ $dbServerName = "localhost"; // ip address (hostname -I)
 	
 	
 ?>
-</pre>
+```
 
 ## logout.php
-<pre>
+```
 <?php
 	session_start();
 	session_destroy();
 	header("location:login.php");
 ?>
-</pre>
+```
