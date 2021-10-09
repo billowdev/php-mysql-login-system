@@ -1,12 +1,6 @@
 <?php
 	session_start();
-	$dbServerName = "localhost:3306"; // ip address (hostname -I)
-	$dbUsername = "myuser"; // username
-	$dbPassword = "root1234"; // db pass
-	$dbName = "mydatabase"; // your database to connect
-
-	$con = mysqli_connect($dbServerName, $dbUsername, $dbPassword, $dbName) or die("Error ! : " . mysqli_error($con));
-
+	include("dbcon.php");
 	$username = $_POST['txtUsername'];
 	$password = $_POST['txtPassword'];
 

@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	include "dbcon.php";
 	if($_SESSION['UserID'] == "")
 	{
 		echo "Please Login!";
@@ -11,11 +12,7 @@
 		echo "This page for User only!";
 		exit();
 	}	
-	
-	$dbServerName = "localhost:3306"; // ip address (hostname -I)
-	$dbUsername = "myuser"; // username
-	$dbPassword = "root1234"; // db pass
-	$dbName = "mydatabase"; // your database to connect
+
 
 	$strSQL = "SELECT * FROM member WHERE UserID = '".$_SESSION['UserID']."' ";
 

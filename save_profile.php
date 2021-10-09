@@ -1,15 +1,11 @@
 <?php
 	session_start();
+	include "dbcon.php";
 	if($_SESSION['UserID'] == "")
 	{
 		echo "Please Login!";
 		exit();
 	}
-
-	$dbServerName = "localhost:3306"; // ip address (hostname -I)
-	$dbUsername = "myuser"; // username
-	$dbPassword = "root1234"; // db pass
-	$dbName = "mydatabase"; // your database to connect
 	
 	if($_POST["txtPassword"] != $_POST["txtConPassword"])
 	{

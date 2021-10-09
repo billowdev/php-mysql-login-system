@@ -1,6 +1,6 @@
 <?php
-  include "dbcon.php";
 	session_start();
+  include "dbcon.php";
   
 
 	if($_SESSION['UserID'] == "")
