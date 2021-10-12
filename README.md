@@ -1,6 +1,11 @@
 # php-mysql-login-system
 PHP MySQL reference : thaicreate
 
+## ลง Ubuntu ใน VMware
+- https://youtu.be/P9_TxAYZ20E
+- 
+## ทดลองเซิร์ฟเวอร์ กับระบบล็อคอิน  phpmyadmin - mysql ใน ubunt userver
+- https://youtu.be/OFN-RVQfcuQ
 
 ### vmware linux server
 ```
