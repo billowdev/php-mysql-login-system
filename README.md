@@ -1,9 +1,11 @@
 # php-mysql-login-system
 PHP MySQL reference : thaicreate
 
+
+
 ## ลง Ubuntu ใน VMware
 - https://youtu.be/P9_TxAYZ20E
-- 
+
 ## ทดลองเซิร์ฟเวอร์ กับระบบล็อคอิน  phpmyadmin - mysql ใน ubunt userver
 - https://youtu.be/OFN-RVQfcuQ
 
@@ -26,6 +28,14 @@ reference : connect database and query
 
 https://www.codexworld.com/connect-access-remote-mysql-database-cpanel-php/
 
+### Ip ใน dbcon.php
+<pre>
+mysql default : localhost:3306
+หรือ
+ถ้าใครไม่ได้ให้ลองใช้ ip ที่ได้จาก hostname -I
+คือ
+192.168.xx.xxx
+</pre>
 
 ## dbcon.php
 ```
