@@ -9,12 +9,18 @@ PHP MySQL reference : thaicreate
 ## ทดลองเซิร์ฟเวอร์ กับระบบล็อคอิน  phpmyadmin - mysql ใน ubunt userver
 - https://youtu.be/OFN-RVQfcuQ
 
-### vmware linux server
+### vmware ubuntu linux server
 ```
 cd /var/www/html;
 git clone https://github.com/lacakp/php-mysql-login-system.git; 
 mv -v ./php-mysql-login-system/* ./ ; 
 rm -r php-mysql-login-system;
+```
+### vmware centos8
+```
+git clone https://github.com/lacakp/php-mysql-login-system.git; 
+mv -f ./php-mysql-login-system/* ./ ;
+rm -f -r php-mysql-login-system;
 ```
 
 ```
