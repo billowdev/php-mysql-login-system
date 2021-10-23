@@ -23,45 +23,44 @@
 <html>
 <head>
 <title>codetopanda</title>
-<link rel="stylesheet" href="assets/css/welcome.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/edit_profile.css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit" >
+<body>
 
 
-</head>
-<body class="d-flex flex-column min-vh-100">
-<header>
-<div class="container-fluid welcome-page" id="home">
-    <div class="jumbotron">
-    <h1>Welcome to User Page!</h1> <br>
-      <h1>
-     <?php echo $objResult["Username"];?>
-      </h1>
-      <p>
-        <h2><?php echo $objResult["Name"];?></h2>
-      </p>
-      <br>
-
-      <ul>
-        <li class="mb-3">
-        <form action="/edit_profile.php" method="get">
-          <button type="submit" class="btn btn-primary"> แก้ไขโปรไฟล์ </button>
-        </form>
-        </li>
-        <li class="mb-3">
-        <form action="/logout.php" method="get">
-          <button type="submit" formaction="/logout.php" class="btn btn-danger"> ออกจากระบบ </button>
-        </form>
-        </li>
-      </ul>
+<div class="bg"> </div>
+<div class="container" id="app">
+  <div class="row justify-content-center align-items-center vh-100">
+    <div class="col-md-6">
+      <div class="card py-3 p-lg-5 shadow">
+        <div class="card-title">
+          <img src="assets/images/panda-pixel.png" width="300px" class="img-fluid d-block mx-auto" alt="logo">
+        </div>
+        <div class="card-body">
+                <h1> Welcome <?php echo $objResult["Username"];?> </h1> <br>
+                <h1><?php echo $objResult["Name"];?></h1>
+                  <br>
+                  <h3> Your status is User </h3>
+                  <form action="/edit_profile.php" method="get">
+                    <button type="submit" class="btn btn-primary"> แก้ไขโปรไฟล์ </button>
+                  </form>
+              
+              
+                  <form action="/logout.php" method="get">
+                    <button type="submit" formaction="/logout.php" class="btn btn-danger"> ออกจากระบบ </button>
+                  </form>
+            
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-
-  </header>
+</div>
 
 
-<footer class="bg-dark text-center text-white ">
+<footer class="bg-dark text-center text-white">
   <!-- Grid container -->
   <div class="container p-4">
     <!-- Section: Social media -->
@@ -89,7 +88,9 @@
 
 </footer>
 <!-- Footer -->
+
 </body>
 </html>
+
 
 
