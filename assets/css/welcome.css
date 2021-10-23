@@ -1,0 +1,100 @@
+	body {
+	    font: 300 13px/1.6 Roboto, Helvetica, Arial;
+	    /* color: #444; */
+	    position: relative;
+	    background: #f0f2f5;
+	    height: 100vh;
+	    text-align: center;
+		background: #3f51b5;
+
+		/* background: url('/assets/images/w4-min.jpg') no-repeat center center; */
+		/* background-size: cover; */
+	}
+	body:after{
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		/* background-color: rgba(0,0,0,.5); */
+		z-index: -1
+	}
+
+	ul{
+	    list-style: none;
+	}
+
+	img {
+	    -ms-interpolation-mode: bicubic;
+	    vertical-align: middle;
+	    border: 0;
+	}
+
+	header {
+		padding-top: 200px;
+		padding-bottom: 100px;
+		
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 30% 25%;
+		/* use without jumbotron
+		text-shadow: 0 0 15px #eee; */
+	  }
+
+
+	\* --------- WELCOME ---------- */
+
+
+
+	.welcome-page {
+	  padding-top: 200px;
+	  padding-bottom: 200px;
+	  
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: 30% 25%;
+	  /* use without jumbotron
+	  text-shadow: 0 0 15px #eee; */
+	}
+	
+	.welcome-page > .jumbotron {
+	  background-color: rgba(255,255,255,0.5);
+	}
+	
+	.welcome-page h1 {
+	  font-size: 2.85em;
+	  font-family: Righteous, cursive;
+	  margin: .25em 0;
+	}
+	
+	.welcome-page h1:after {
+	  content: "";
+	  display: block;
+	  background-color: #222;
+	  height: 2px;
+	  width: 200px;
+	  border-radius: 25%;
+	  margin: 15px auto;
+	}
+	
+	.welcome-page p {
+	  font-size: 1.15em;
+	  /* use without jumbotron */
+	  line-height: 1.5em;
+	}
+	
+	.welcome-page a {
+	  margin-right: 1.25em;
+	}
+	.welcome-page a:last-child {
+	  margin-right: 0;
+	}
+
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		height: 100px;
+	  }
