@@ -15,7 +15,12 @@ mv -f ./php-mysql-login-system/* ./ ;
 rm -f -r php-mysql-login-system;
 ```
 
+### Tutorial 
+Ubuntu
+https://lacakp.github.io/simple-linux-server-mysqldb/
 
+Centos8
+https://lacakp.github.io/simple-linux-server-mysqldb/centos8
 
 ```
 nano dbcon.php
