@@ -31,7 +31,7 @@
     <div class="col-md-6">
       <div class="card py-3 p-lg-5 shadow">
         <div class="card-title">
-          <img src="assets/images/panda-pixel.png" width="300px" class="img-fluid d-block mx-auto" alt="logo">
+          <img src="assets/images/panda.gif" width="300px" class="img-fluid d-block mx-auto" alt="logo">
         </div>
         <div class="card-body">
                 <h1 class="mt-0">แก้ไขโปรไฟล์</h1>
