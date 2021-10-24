@@ -73,7 +73,7 @@ if ($objResult) {
 					</div>
 					<div class="card-body">
 							<h1 class="text-center">
-							"Save Completed!<br>
+							Register Completed<br>
 							</h1>
 							<h2 class="text-center">Go to Login Page</h2>
 						<form name="form1" method="post" action="login.php">
