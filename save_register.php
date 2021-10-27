@@ -26,7 +26,7 @@ $strSQL = "SELECT * FROM member WHERE Username = '" . trim($_POST['txtUsername']
 $objQuery = $conn->query($strSQL);
 $objResult = $objQuery->fetch_assoc();
 if ($objResult) {
-
+	echo
 	'
 			<div class="bg"> </div>
 				<div class="container" id="app">
